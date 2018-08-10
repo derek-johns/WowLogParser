@@ -1,0 +1,34 @@
+// SEE this for log parsing locations
+//https://docs.google.com/spreadsheets/d/1GDUUYzNIbTP484fHzjkvgChuFPnSYYXz8Z_JTV6Mp1o/edit?usp=sharing
+// For string parsing check out these links
+
+String class functions:
+1. public String[] split(String regex)
+https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#split(java.lang.String)
+https://www.geeksforgeeks.org/split-string-java-examples/
+https://www.tutorialspoint.com/java/java_string_split.htm
+        
+The regex is a regular expression.  In this case we are going to split our logstring twice, once with a comma and once with a space.
+Put a breakpoint after a split and check out the resulting String Array to see how it matches up with the values we are looking for.
+I give you the two delimiter strings to use for the two splits
+        
+        
+        
+2. public boolean contains(CharSequence s)
+https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#contains(java.lang.CharSequence)
+https://www.geeksforgeeks.org/java-string-contains-method-example/
+        
+In this case a CharSequence can just be a string like "Hello"
+        
+        
+3. public String replace(CharSequence target, CharSequence replacement)
+https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#replace(java.lang.CharSequence,%20java.lang.CharSequence)
+https://www.geeksforgeeks.org/java-lang-string-replace-method-java/
+        
+Again, a CharSequence can just be a String
+        
+        
+4. public boolean equals(Object anObject)
+https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#equals(java.lang.Object)
+        
+Use the equals comparison function instead of == when comparing Strings in Java

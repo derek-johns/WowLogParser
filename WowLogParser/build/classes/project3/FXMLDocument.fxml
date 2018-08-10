@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.WoWLogParser">
+   <children>
+      <Button fx:id="btnLoadLog" layoutX="837.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnLoadLog_clicked" prefHeight="63.0" prefWidth="200.0" text="Add Log File" />
+      <ListView fx:id="lvLogList" layoutX="837.0" layoutY="353.0" onMouseClicked="#lvLogList_Clicked" prefHeight="271.0" prefWidth="200.0" />
+      <TabPane prefHeight="652.0" prefWidth="823.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Damage">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Canvas fx:id="cvsDamage" height="624.0" style="-fx-background-color: 000;" width="823.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Healing">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Canvas fx:id="cvsHealing" height="626.0" style="-fx-background-color: 000;" width="823.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="ivLogo" fitHeight="247.0" fitWidth="200.0" layoutX="837.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cis150p32.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
